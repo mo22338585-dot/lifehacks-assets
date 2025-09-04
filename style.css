@@ -1,0 +1,29 @@
+.post-body a.b-tooltip-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-20%, 1px);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip iframe {
+      width: 200px;
+      height: 198px;
+      max-width: none;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .post-body a.b-tooltip-container:hover .b-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
